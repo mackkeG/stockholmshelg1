@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skapa din egen Stockholmshelg</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 1rem;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: red;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .intro-box {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .slider-container {
+      margin-bottom: 2rem;
+    }
+
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .dates-section {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .date-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .date-option input {
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Skapa din egen Stockholmshelg</h1>
+
+  <div class="intro-box">
+    <p>
+      Stort grattis på 30-årsdagen älskling! Västerås är bra på många vis, men Stockholm är ändå Stockholm. <br><br>
+      Därför vill jag bjuda dig på en lång-weekend i slutet av sommaren. <br><br>
+      "Vad ska vi då hitta på?" undrar du såklart. Det är lite upp till dig – nedan reglage bestämmer olika parametrar som du får ställa in. <br><br>
+      Denna information går därefter direkt in i en särskild AI (Marcus hjärna©) och ut kommer ett skräddarsytt Stockholms-äventyr!
+    </p>
+  </div>
+
+  <!-- Sliders -->
+  <div class="slider-container">
+    <div class="slider-labels">
+      <span>Inomhus</span>
+      <span>Utomhus</span>
+    </div>
+    <input type="range" min="0" max="100" value="50">
+  </div>
+
+  <div class="slider-container">
+    <div class="slider-labels">
+      <span>Avkoppling</span>
+      <span>Äventyr</span>
+    </div>
+    <input type="range" min="0" max="100" value="50">
+  </div>
+
+  <div class="slider-container">
+    <div class="slider-labels">
+      <span>Budget</span>
+      <span>Lyx</span>
+    </div>
+    <input type="range" min="0" max="100" value="50">
+  </div>
+
+  <div class="slider-container">
+    <div class="slider-labels">
+      <span>Bara vi två</span>
+      <span>Vänner & folk</span>
+    </div>
+    <input type="range" min="0" max="100" value="50">
+  </div>
+
+  <div class="slider-container">
+    <div class="slider-labels">
+      <span>Kultur</span>
+      <span>Nattliv</span>
+    </div>
+    <input type="range" min="0" max="100" value="50">
+  </div>
+
+  <div class="slider-container">
+    <div class="slider-labels">
+      <span>Styrt schema</span>
+      <span>Spontant</span>
+    </div>
+    <input type="range" min="0" max="100" value="50">
+  </div>
+
+  <!-- Datumförslag -->
+  <div class="dates-section">
+    <h3>Vilket datum passar bäst?</h3>
+    <div class="date-option">
+      <input type="checkbox" id="date1">
+      <label for="date1">23–25 augusti</label>
+    </div>
+    <div class="date-option">
+      <input type="checkbox" id="date2">
+      <label for="date2">30 augusti–1 september</label>
+    </div>
+    <div class="date-option">
+      <input type="checkbox" id="date3">
+      <label for="date3">6–8 september</label>
+    </div>
+  </div>
+
+</body>
+</html>
